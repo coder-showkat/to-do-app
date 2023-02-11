@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  outline: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 90vw;
+  margin: 1rem auto;
+  background-color: #cdeadb;
+  border: 5px solid #9a9696cc;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 3rem 2rem;
+}
+
+.logo {
+  color: #1c5186;
+}
+
+.logo span {
+  color: tomato;
+}
+
+.appName {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  color: #0c681a;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  border: 3px solid #9a9696cc;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+}
+
+.form input {
+  padding: 0.4rem 0.8rem;
+}
+
+.task-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.incomplete,
+.complete {
+  border: 3px solid #9a9696cc;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+}
+
+.task-container h1 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.task-container li {
+  vertical-align: middle;
+}
+
+hr {
+  width: 95%;
+  margin: 0.4rem auto 0.8rem;
+}
+
+.checkbox {
+  border-radius: 0.4rem;
+  margin-right: 0.4rem;
+  cursor: pointer;
+}
+
+.dltBtn {
+  margin-left: 0.4rem;
+  padding: 0 0.4rem;
+  background-color: #e44545;
+  color: #eee;
+  border-radius: 0.5rem;
+  border: 2px solid #e44545;
+  cursor: pointer;
+}
+
+.dltBtn:hover {
+  background-color: #a60707;
+  border: 2px solid #a60707;
+}
+
+@media screen and (max-width: 660px) {
+  .task-container,
+  .form {
+    flex-direction: column;
+  }
+}

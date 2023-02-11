@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="logo">S<span class="tomato">A</span>M</h2>
+        <h1 class="appName">to-do app</h1>
+        <form class="form">
+            <p>Add New Task</p>
+            <input type="text" id="inputField">
+            <input type="submit" value="Add Task">
+        </form>
+
+        <div class="task-container">
+            <div class="incomplete">
+                <h1>incomplete tasks</h1>
+                <hr>
+                <ul>
+                    <li><input type="checkbox" class="checkbox"><label id="label">Task Name</label></li>
+                    <li><input type="checkbox" class="checkbox"><label id="label">Task Name</label></li>
+                    <li><input type="checkbox" class="checkbox"><label id="label">Task Name</label></li>
+                </ul>
+            </div>
+            <div class="complete">
+                <h1>completed tasks</h1>
+                <hr>
+                <ul>
+                    <li>Task Name <button class="dltBtn">Delete</button></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
