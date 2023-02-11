@@ -55,7 +55,9 @@ li {
 
 .task-container {
   display: flex;
+  justify-content: center;
   gap: 2rem;
+  width: 100%;
 }
 
 .incomplete,
@@ -64,6 +66,11 @@ li {
   padding: 1rem;
   background-color: #ffffff;
   border-radius: 0.5rem;
+  max-width: 50%;
+}
+
+.complete li {
+  list-style: circle inside;
 }
 
 .task-container h1 {
@@ -76,7 +83,7 @@ li {
 }
 
 hr {
-  width: 95%;
+  width: 100%;
   margin: 0.4rem auto 0.8rem;
 }
 
@@ -105,5 +112,10 @@ hr {
   .task-container,
   .form {
     flex-direction: column;
+  }
+
+  .incomplete,
+  .complete {
+    max-width: 100%;
   }
 }
